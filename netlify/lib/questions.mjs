@@ -59,22 +59,28 @@ export const QUESTIONS = [
     a: ["Le savon de Marseille","Les navettes de Marseille","L'huile d'olive de Nyons","Le pastis Ricard"], r: 3,
     why: "Paul Ricard, c'est le pastis, mais aussi un rêve fou de circuit dans le Sud, inauguré en 1970." },
 
-  // ---------- SPORT AUTOMOBILE ----------
-  { c: 'auto', q: "Quel drapeau signale la fin d'une course ?",
-    a: ["Le drapeau à damier","Le drapeau bleu","Le drapeau vert","Le drapeau jaune"], r: 0,
-    why: "Le damier noir et blanc : le drapeau que tous les pilotes rêvent de voir." },
-  { c: 'auto', q: "En Formule 1, combien de temps dure un arrêt au stand pour changer les 4 pneus (équipes de pointe) ?",
-    a: ["Une minute","Environ 20 secondes","Un peu plus de 2 secondes","Cinq minutes"], r: 2,
-    why: "Un peu plus de 2 secondes : c'est plus rapide que d'ouvrir un cadenas… enfin presque !" },
-  { c: 'auto', q: "Quelle célèbre course d'endurance se dispute chaque année dans la Sarthe ?",
-    a: ["Le Tour de France automobile","Les 24 Heures du Mans","Le Rallye Monte-Carlo","Le Paris-Dakar"], r: 1,
-    why: "Les 24 Heures du Mans : une course… qui dure tout un jour et toute une nuit." },
-  { c: 'auto', q: "Quel pilote français a remporté 9 titres de champion du monde des rallyes entre 2004 et 2012 ?",
-    a: ["Fernando Alonso","Romain Grosjean","Alain Prost","Sébastien Loeb"], r: 3,
-    why: "Sébastien Loeb : 9 titres consécutifs, un record qui fait rêver tous les copilotes." },
-  { c: 'auto', q: "Que veut dire « partir en pole position » ?",
-    a: ["Partir avec des pneus neufs","Partir en dernier","Partir sans casque","Partir en 1re position sur la grille"], r: 3,
-    why: "La pole position est la place de choix, devant tout le monde, obtenue grâce aux qualifications." },
+  // ---------- LE CASTELLET : LE CIRCUIT ----------
+  { c: 'castellet', q: "En quelle année le Circuit Paul Ricard a-t-il été inauguré ?",
+    a: ["1960","1982","1970","1955"], r: 2,
+    why: "Inauguré le 19 avril 1970 : le circuit avait à peine un an quand la F1 est venue pour la première fois." },
+  { c: 'castellet', q: "Combien de fois le Grand Prix de France de F1 a-t-il eu lieu au Castellet entre 1971 et 1990 ?",
+    a: ["14 fois","3 fois","7 fois","25 fois"], r: 0,
+    why: "14 Grands Prix de France de 1971 à 1990. Le Castellet a bien reçu la F1 pendant vingt ans." },
+  { c: 'castellet', q: "Quel pilote français a gagné quatre fois le Grand Prix de France au Castellet (1983, 1988, 1989, 1990) ?",
+    a: ["Jean Alesi","Jacques Laffite","René Arnoux","Alain Prost"], r: 3,
+    why: "Alain Prost, le « Professeur », a gagné ici quatre fois. Un habitué de la ligne droite du Mistral !" },
+  { c: 'castellet', q: "Avant son retour en 2018, en quelle année le Circuit Paul Ricard avait-il accueilli un Grand Prix de France pour la dernière fois ?",
+    a: ["1983","1990","2008","1999"], r: 1,
+    why: "1990 : il aura fallu attendre 28 ans pour revoir la F1 au Castellet, en 2018." },
+  { c: 'castellet', q: "En 1999, le circuit a été racheté par une société détenue par quel patron de la F1 ?",
+    a: ["Flavio Briatore","Ron Dennis","Bernie Ecclestone","Jean Todt"], r: 2,
+    why: "Bernie Ecclestone, l'homme qui a longtemps dirigé les affaires de la F1, a racheté le circuit en 1999." },
+  { c: 'castellet', q: "Quel équipement inattendu trouve-t-on aussi sur le site du Circuit Paul Ricard ?",
+    a: ["Un port de plaisance","Une piste d'atterrissage pour jets privés","Une station de ski","Un casino"], r: 1,
+    why: "Une piste pour jets privés : on peut arriver à la course par les airs. Pratique pour rejoindre le Castellet." },
+  { c: 'castellet', q: "Quelle célèbre course moto de 24 heures s'est disputée sur le Circuit Paul Ricard ?",
+    a: ["Le Tourist Trophy","Le Bol d'Or","Les 8 Heures de Suzuka","Le Paris-Dakar"], r: 1,
+    why: "Le Bol d'Or, une course d'endurance moto de 24 heures, a longtemps eu le Castellet pour décor." },
 
   // ---------- PARTICULARITÉS LOCALES ----------
   { c: 'local', q: "Quel ingrédient est la base de la tapenade provençale ?",
@@ -94,4 +100,4 @@ export const QUESTIONS = [
     why: "Le chêne-liège : son écorce est récoltée sans abattre l'arbre. Bouchon, bouchon, mais pas sur la route !" },
 ];
 
-export const CATEGORIES = ['provence', 'var', 'circuit', 'auto', 'local'];
+export const CATEGORIES = ['provence', 'var', 'circuit', 'castellet', 'local'];
