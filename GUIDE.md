@@ -111,8 +111,8 @@ Netlify gratuit (suffisant), Make gratuit, Google gratuit, GitHub gratuit. QR : 
 - Premier Grand Prix de France de F1 au circuit : 4 juillet 1971, victoire de Jackie Stewart devant François Cevert.
 - Ligne droite du Mistral : environ 1,8 km (chicane ajoutée depuis).
 - Zones de dégagement bleues et rouges, en remplacement des bacs à gravier.
-Sources : [Wikipedia](https://en.wikipedia.org/wiki/Circuit_Paul_Ricard), [INA](https://fresques.ina.fr/sudorama/fiche-media/00000000282/le-circuit-du-castellet.html), [F1 Fansite](https://www.f1-fansite.com/fr/f1-circuits/circuit-paul-ricard-layout-lap-record/).
-Les autres questions (Provence, Var, auto, local) reposent sur des connaissances générales courantes : relisez-les.
+Sources : [Wikipedia](https://en.wikipedia.org/wiki/Circuit_Paul_Ricard), [European Le Mans Series : faits et chiffres](https://www.europeanlemansseries.com/en/news/facts-and-figures-about-the-circuit-paul-ricard-5f06dfd07ffc336a172c7ef0/10053) (inauguration le 19/04/1970, 14 Grands Prix de France de 1971 à 1990, victoires de Prost en 1983/88/89/90, retour en 2018 après 1990, vente en 1999 à une société de Bernie Ecclestone, piste pour jets privés, Bol d'Or), [INA](https://fresques.ina.fr/sudorama/fiche-media/00000000282/le-circuit-du-castellet.html), [F1 Fansite](https://www.f1-fansite.com/fr/f1-circuits/circuit-paul-ricard-layout-lap-record/).
+Les autres questions (Provence, Var, local) reposent sur des connaissances générales courantes : relisez-les.
 
 ## 11. Prompt pour un agent IA (si vous faites évoluer le projet)
 > Tu maintiens « Pit Stop Challenge – Au Paddock Chic », un quiz mobile sur Netlify. Règles : ne jamais exposer le code du cadenas ni les bonnes réponses côté client ; toute validation reste dans `netlify/functions`; aucune donnée personnelle ; ton chaleureux, premium, sport automobile et Provence ; chaque nouvelle question doit avoir une réponse factuelle vérifiable, la position de la bonne réponse indiquée par `r` (à varier d'une question à l'autre), et une explication amusante de 1–2 phrases ; n'invente jamais de fait sur le Circuit Paul Ricard sans source citée.
