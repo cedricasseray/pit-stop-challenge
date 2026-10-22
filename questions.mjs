@@ -1,0 +1,97 @@
+// BANQUE DE QUESTIONS - reste côté serveur (jamais envoyée au navigateur avec les réponses).
+// Format : c = catégorie, q = question, a = réponses (la BONNE est toujours la 1re, le serveur mélange),
+// why = explication affichée après une bonne réponse.
+// Pour ajouter une question : copiez un bloc. Une partie tire 1 question par catégorie.
+// Faits Paul Ricard vérifiés (voir GUIDE.md, section "Sources").
+
+export const QUESTIONS = [
+  // ---------- PROVENCE ----------
+  { c: 'provence', q: "Quelle ville est célèbre pour son Vieux-Port et sa basilique Notre-Dame-de-la-Garde ?",
+    a: ['Marseille', 'Toulon', 'Aix-en-Provence', 'Draguignan'],
+    why: "La « Bonne Mère » veille sur Marseille depuis sa colline. Vue imprenable, comme depuis la pole position !" },
+  { c: 'provence', q: "Quelle spécialité provençale est préparée avec de l'huile d'olive, de l'ail et du basilic ?",
+    a: ['Le pistou', 'La bouillabaisse', "L'aïoli", 'La daube'],
+    why: "Le pistou : basilic, ail et huile d'olive. Le cousin provençal du pesto, en soupe ou en sauce." },
+  { c: 'provence', q: "Quelle plante colore de violet le plateau de Valensole en été ?",
+    a: ['La lavande', 'Le tournesol', 'Le coquelicot', 'La glycine'],
+    why: "Des rangées de lavande à perte de vue : le plus beau circuit… pour les abeilles." },
+  { c: 'provence', q: "Quel peintre né à Aix-en-Provence a peint plus de 80 fois la montagne Sainte-Victoire ?",
+    a: ['Paul Cézanne', 'Claude Monet', 'Vincent van Gogh', 'Pablo Picasso'],
+    why: "Cézanne n'a jamais cessé de tourner autour de sa montagne. Un vrai passionné de tours de piste !" },
+  { c: 'provence', q: "Quel petit animal est le symbole sonore de la Provence en été ?",
+    a: ['La cigale', "L'abeille", 'Le grillon', 'La libellule'],
+    why: "La cigale chante quand il fait chaud, un moteur d'été qui ne s'arrête jamais." },
+
+  // ---------- VAR ----------
+  { c: 'var', q: "Quelle est la préfecture du département du Var ?",
+    a: ['Toulon', 'Draguignan', 'Hyères', 'Fréjus'],
+    why: "Toulon est la préfecture du Var. Draguignan, elle, l'a été avant 1974." },
+  { c: 'var', q: "Quelle île varoise, sans voitures, se découvre surtout à vélo et à pied ?",
+    a: ['Porquerolles', "L'île d'If", 'Les îles de Lérins', 'Le Frioul'],
+    why: "Porquerolles, dans l'archipel d'Hyères : plages de rêve et zéro embouteillage." },
+  { c: 'var', q: "Quel village varois est célèbre pour son port, ses yachts et « Le Gendarme » de Louis de Funès ?",
+    a: ['Saint-Tropez', 'Bandol', 'Cassis', 'Sanary-sur-Mer'],
+    why: "Les films du Gendarme ont été tournés à Saint-Tropez. Pas de radar ici, mais attention aux amendes de stationnement !" },
+  { c: 'var', q: "Quel cépage domine les vins rouges de l'appellation Bandol, voisine du circuit ?",
+    a: ['Le mourvèdre', 'Le merlot', 'Le pinot noir', 'Le gamay'],
+    why: "Le mourvèdre aime le soleil et les coteaux face à la mer. Un grand cru à déguster… à l'arrêt !" },
+  { c: 'var', q: "Quelle rivière a creusé les gorges du Verdon, surnommées le « Grand Canyon d'Europe » ?",
+    a: ['Le Verdon', 'La Durance', "L'Argens", 'Le Gapeau'],
+    why: "Le Verdon, aux eaux turquoise, partage ses gorges entre le Var et les Alpes-de-Haute-Provence." },
+
+  // ---------- CIRCUIT PAUL RICARD ----------
+  { c: 'circuit', q: "Dans quel département se situe le Circuit Paul Ricard ?",
+    a: ['Var', 'Alpes-Maritimes', 'Bouches-du-Rhône', 'Vaucluse'],
+    why: "Le circuit est au Castellet, dans le Var, à deux pas de votre Paddock Chic !" },
+  { c: 'circuit', q: "Sur quelle commune du Var se trouve le Circuit Paul Ricard ?",
+    a: ['Le Castellet', 'Saint-Tropez', 'Hyères', 'Brignoles'],
+    why: "Le Castellet : village perché et circuit mythique, c'est le même code postal." },
+  { c: 'circuit', q: "En quelle année le Circuit Paul Ricard a-t-il accueilli son premier Grand Prix de France de Formule 1 ?",
+    a: ['1971', '1965', '1980', '1992'],
+    why: "Le 4 juillet 1971, Jackie Stewart s'impose ici devant François Cevert. Le circuit n'avait qu'un an !" },
+  { c: 'circuit', q: "Comment s'appelle la célèbre ligne droite d'environ 1,8 km du Circuit Paul Ricard ?",
+    a: ['La ligne droite du Mistral', 'La ligne droite du Soleil', 'La ligne droite de la Cigale', 'La ligne droite du Verdon'],
+    why: "Elle porte le nom du vent de Provence, et les F1 y filent bien plus vite que lui !" },
+  { c: 'circuit', q: "De quelles couleurs sont les célèbres zones de dégagement du Circuit Paul Ricard ?",
+    a: ['Bleu et rouge', 'Jaune et vert', 'Orange et blanc', 'Rose et violet'],
+    why: "Bleu et rouge, une signature visible même depuis le ciel. Elles remplacent les bacs à gravier." },
+  { c: 'circuit', q: "Paul Ricard, qui a fait construire le circuit, est aussi connu pour avoir créé…",
+    a: ['Le pastis Ricard', 'Le savon de Marseille', "L'huile d'olive de Nyons", 'Les navettes de Marseille'],
+    why: "Paul Ricard, c'est le pastis, mais aussi un rêve fou de circuit dans le Sud, inauguré en 1970." },
+
+  // ---------- SPORT AUTOMOBILE ----------
+  { c: 'auto', q: "Quel drapeau signale la fin d'une course ?",
+    a: ['Le drapeau à damier', 'Le drapeau jaune', 'Le drapeau bleu', 'Le drapeau vert'],
+    why: "Le damier noir et blanc : le drapeau que tous les pilotes rêvent de voir." },
+  { c: 'auto', q: "En Formule 1, combien de temps dure un arrêt au stand pour changer les 4 pneus (équipes de pointe) ?",
+    a: ['Un peu plus de 2 secondes', 'Environ 20 secondes', 'Une minute', 'Cinq minutes'],
+    why: "Un peu plus de 2 secondes : c'est plus rapide que d'ouvrir un cadenas… enfin presque !" },
+  { c: 'auto', q: "Quelle célèbre course d'endurance se dispute chaque année dans la Sarthe ?",
+    a: ['Les 24 Heures du Mans', 'Le Rallye Monte-Carlo', 'Le Paris-Dakar', 'Le Tour de France automobile'],
+    why: "Les 24 Heures du Mans : une course… qui dure tout un jour et toute une nuit." },
+  { c: 'auto', q: "Quel pilote français a remporté 9 titres de champion du monde des rallyes entre 2004 et 2012 ?",
+    a: ['Sébastien Loeb', 'Alain Prost', 'Romain Grosjean', 'Fernando Alonso'],
+    why: "Sébastien Loeb : 9 titres consécutifs, un record qui fait rêver tous les copilotes." },
+  { c: 'auto', q: "Que veut dire « partir en pole position » ?",
+    a: ['Partir en 1re position sur la grille', 'Partir en dernier', 'Partir sans casque', 'Partir avec des pneus neufs'],
+    why: "La pole position est la place de choix, devant tout le monde, obtenue grâce aux qualifications." },
+
+  // ---------- PARTICULARITÉS LOCALES ----------
+  { c: 'local', q: "Quel ingrédient est la base de la tapenade provençale ?",
+    a: ['Les olives', 'Les tomates', 'Les poivrons', 'Les aubergines'],
+    why: "Olives, câpres et anchois : parfait à l'apéro, sur un toast, avant de reprendre la piste." },
+  { c: 'local', q: "Quel jeu de boules est né à La Ciotat en 1907 ?",
+    a: ['La pétanque', 'Le curling', 'Le bowling', 'Le croquet'],
+    why: "La pétanque, « pieds tanqués », est née près de Marseille. Tirer ou pointer, à vous de choisir !" },
+  { c: 'local', q: "Quel massif calcaire et ses criques turquoise s'étendent entre Marseille et Cassis ?",
+    a: ['Les calanques', 'Le massif des Maures', "L'Estérel", 'Le Luberon'],
+    why: "Les calanques : falaises blanches, eau turquoise, un parc national." },
+  { c: 'local', q: "Quelle couleur de vin domine largement la production de Provence ?",
+    a: ['Le rosé', 'Le rouge', 'Le blanc', "L'orange"],
+    why: "La Provence est la grande région du rosé en France, à servir bien frais en terrasse !" },
+  { c: 'local', q: "Quel arbre dont l'écorce sert à fabriquer des bouchons pousse dans le massif des Maures, dans le Var ?",
+    a: ['Le chêne-liège', 'Le pin parasol', "L'olivier", 'Le cyprès'],
+    why: "Le chêne-liège : son écorce est récoltée sans abattre l'arbre. Bouchon, bouchon, mais pas sur la route !" },
+];
+
+export const CATEGORIES = ['provence', 'var', 'circuit', 'auto', 'local'];

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0a0e1a">
+<title>Pit Stop Challenge – Au Paddock Chic</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="flagstrip" aria-hidden="true"></div>
+<main id="app" aria-live="polite">
+
+  <!-- ACCUEIL -->
+  <section id="screen-home" class="screen active">
+    <p class="kicker">Au Paddock Chic</p>
+    <h1><span class="flag">🏁</span> PIT STOP<br>CHALLENGE</h1>
+    <p class="tagline">Prêt pour votre dernier tour ? 5 questions. 1 code. À vous de jouer !</p>
+    <div class="card">
+      <h2>Bienvenue au Paddock Chic !</h2>
+      <p>Votre mission : répondez correctement aux 5 questions pour découvrir le code secret du cadenas.</p>
+      <p class="warn">Attention... une seule erreur peut vous faire perdre du temps au stand ! 🔧🏎️</p>
+    </div>
+    <button id="btn-start" class="btn primary">DÉMARRER LE CHALLENGE</button>
+  </section>
+
+  <!-- QUESTION -->
+  <section id="screen-quiz" class="screen">
+    <div class="progress-wrap">
+      <div class="progress-label"><span id="q-label">Question 1/5</span></div>
+      <div class="progress"><div id="q-bar"></div></div>
+    </div>
+    <h2 id="q-text" class="question"></h2>
+    <div id="q-choices" class="choices"></div>
+    <div id="q-feedback" class="feedback" hidden>
+      <p id="fb-title" class="fb-title"></p>
+      <p id="fb-why"></p>
+      <button id="btn-next" class="btn primary">QUESTION SUIVANTE</button>
+    </div>
+  </section>
+
+  <!-- ERREUR -->
+  <section id="screen-fail" class="screen">
+    <p class="big-emoji">🏎️</p>
+    <h2 class="fail-title">Passage aux stands !</h2>
+    <div class="card">
+      <p>Pas tout à fait... Cette réponse n'était pas la bonne.</p>
+      <p>Pas grave, le moteur est encore chaud. Retentez votre chance !</p>
+    </div>
+    <button id="btn-retry" class="btn primary">REPARTIR POUR UN TOUR</button>
+  </section>
+
+  <!-- VICTOIRE -->
+  <section id="screen-win" class="screen">
+    <div id="confetti" aria-hidden="true"></div>
+    <p class="big-emoji">🏆</p>
+    <h2 class="win-title">TOUR PARFAIT !</h2>
+    <p class="win-text">Félicitations ! Vous avez réalisé le tour parfait.<br>Votre récompense vous attend...</p>
+    <div class="code-box">
+      <p class="code-label">🔐 CODE DU CADENAS</p>
+      <div id="code" class="code" aria-label="Code du cadenas"></div>
+    </div>
+    <p class="win-text">Ouvrez le cadenas et découvrez votre surprise !</p>
+  </section>
+
+  <!-- ERREUR RÉSEAU -->
+  <section id="screen-error" class="screen">
+    <p class="big-emoji">🔧</p>
+    <h2>Panne au stand</h2>
+    <div class="card"><p id="err-text">Petit souci de connexion. Vérifiez votre réseau et réessayez.</p></div>
+    <button id="btn-error" class="btn primary">RÉESSAYER</button>
+  </section>
+
+</main>
+<script src="app.js"></script>
+</body>
+</html>
