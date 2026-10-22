@@ -19,8 +19,8 @@ export default async (req) => {
   const q = QUESTIONS[st.qs[st.i]];
   if (!q) return json({ error: 'invalid_token' }, 400);
 
-  // La bonne réponse est la 1re de la banque (idx 0) ; son identifiant est recalculé ici.
-  if (body.choice !== choiceId(st.sid, st.qs[st.i], 0)) {
+  // La bonne réponse est à la position q.r de la banque ; son identifiant est recalculé ici.
+  if (body.choice !== choiceId(st.sid, st.qs[st.i], q.r)) {
     await notify({ type: 'fail', sid: st.sid, attempt: st.att, step: st.i + 1 });
     return json({ correct: false });
   }
