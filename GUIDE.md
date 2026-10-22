@@ -36,7 +36,7 @@ GitHub (code), Netlify (hébergement + fonctions), Make (automatisation), Google
 4. Redéployez (*Deploys → Trigger deploy*). Notez l'URL, idéalement renommée en `paddock-chic.netlify.app` (*Domain management*).
 
 **Changer le code du cadenas** : modifiez `PADDOCK_CODE` dans Netlify puis redéployez. Aucun fichier à toucher.
-**Ajouter/modifier des questions** : `netlify/lib/questions.mjs` (la bonne réponse est toujours la 1re de `a`, le serveur mélange).
+**Ajouter/modifier des questions** : `netlify/lib/questions.mjs` (la bonne réponse est repérée par `r`, sa position dans `a` : 0 = 1re, 3 = 4e ; le serveur mélange en plus l'ordre à l'affichage).
 
 ## 4. Sécurité
 - Code et bonnes réponses : uniquement côté serveur ; introuvables dans le HTML/JS.
@@ -115,4 +115,4 @@ Sources : [Wikipedia](https://en.wikipedia.org/wiki/Circuit_Paul_Ricard), [INA](
 Les autres questions (Provence, Var, auto, local) reposent sur des connaissances générales courantes : relisez-les.
 
 ## 11. Prompt pour un agent IA (si vous faites évoluer le projet)
-> Tu maintiens « Pit Stop Challenge – Au Paddock Chic », un quiz mobile sur Netlify. Règles : ne jamais exposer le code du cadenas ni les bonnes réponses côté client ; toute validation reste dans `netlify/functions`; aucune donnée personnelle ; ton chaleureux, premium, sport automobile et Provence ; chaque nouvelle question doit avoir une réponse factuelle vérifiable, une bonne réponse en 1re position dans `a`, et une explication amusante de 1–2 phrases ; n'invente jamais de fait sur le Circuit Paul Ricard sans source citée.
+> Tu maintiens « Pit Stop Challenge – Au Paddock Chic », un quiz mobile sur Netlify. Règles : ne jamais exposer le code du cadenas ni les bonnes réponses côté client ; toute validation reste dans `netlify/functions`; aucune donnée personnelle ; ton chaleureux, premium, sport automobile et Provence ; chaque nouvelle question doit avoir une réponse factuelle vérifiable, la position de la bonne réponse indiquée par `r` (à varier d'une question à l'autre), et une explication amusante de 1–2 phrases ; n'invente jamais de fait sur le Circuit Paul Ricard sans source citée.
